@@ -12,7 +12,7 @@ env:
 jobs:
   build_operator:
 
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/checkout@v2
@@ -56,7 +56,7 @@ jobs:
 
   build_interceptor:
 
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/checkout@v2
@@ -99,7 +99,7 @@ jobs:
           push: true
 
   build_scaler:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/checkout@v2
