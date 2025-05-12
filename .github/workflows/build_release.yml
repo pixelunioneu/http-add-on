@@ -13,7 +13,8 @@ jobs:
   build_operator:
 
     runs-on: ubuntu-22.04
-
+    permissions:
+      packages: write
     steps:
       - uses: actions/checkout@v2
 
@@ -57,7 +58,8 @@ jobs:
   build_interceptor:
 
     runs-on: ubuntu-22.04
-
+    permissions:
+      packages: write
     steps:
       - uses: actions/checkout@v2
 
@@ -100,7 +102,8 @@ jobs:
 
   build_scaler:
     runs-on: ubuntu-22.04
-
+    permissions:
+      packages: write
     steps:
       - uses: actions/checkout@v2
 
